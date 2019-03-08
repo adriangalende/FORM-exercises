@@ -1,19 +1,19 @@
-function return_valor(input){
+function return_valor(input) {
     tipos = {
         text: input.value,
-        textarea:input.value,
-        checkbox:input.checked?input.value:"",
-        radio:input.checked?input.value:"",
+        textarea: input.value,
+        checkbox: input.checked ? input.value : "",
+        radio: input.checked ? input.value : "",
         "select-one": input.options
     }
 
     valor = tipos[input.type];
 
-    if(typeof valor == "object"){
+    if (typeof valor == "object") {
         return valor[input.selectedIndex].value;
     }
 
-    return tipos[input.type] != undefined?tipos[input.type]:"" ;
+    return tipos[input.type] != undefined ? tipos[input.type] : "";
 
 }
 
