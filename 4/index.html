@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<form class="form d-flex flex-wrap col-4 flex-column" id="myForm" action="">
+    <div class="form-group mt-4">
+        <div class="col-12">
+            <input type="text" class="form-control" name="usuario" id="nombre-usuario" placeholder="Nombre de usuario">
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+    <div class="form-group mt-1">
+        <div class="col-12">
+            <input type="text" class="form-control" name="email" id="email-usuario" placeholder="ejemplo@email.es">
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+    <div class="form-group mt-1">
+        <div class="col-12">
+            <input type="text" class="form-control" name="password" id="password-usuario" placeholder="password">
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+    <div class="form-group mt-1">
+        <div class="col-12">
+            <input type="text" class="form-control" name="password2" id="password2-usuario" placeholder="confirmación password">
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+    <div class="form-group mt-1">
+        <div class="col-12">
+            <input type="text" class="form-control" name="oepracion" id="operacion-random" placeholder="">
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+    <div class="form-group mt-1">
+        <div class="col-12">
+            <input type="checkbox" name="condiciones" id="condiciones">
+            <label for="condiciones"> Acepto condiciones</label>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+    <button id="crear-cuenta" type="submit" disabled>Crear cuenta</button>
+</form>
+</body>
+<script src="index.js"></script>
+</html>
